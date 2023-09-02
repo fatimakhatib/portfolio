@@ -461,6 +461,10 @@ h3.my-profession
     line-height: 25px;
     color: var(--text-black-700);
 }
+.about .about-content .about-text p.ltr 
+{
+    direction: ltr;
+}
 .about .about-content .personal-info
 {
     flex: 0 0 100%;
@@ -484,7 +488,7 @@ h3.my-profession
     font-weight: 400;
     color:var(--text-black-700);
     margin-right: 4px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .about .about-content .personal-info .buttons
 {
@@ -545,7 +549,8 @@ right: 0;
 .about .about-content .skills .skill-item h5 
 {
     line-height: 40px;
-    font-weight: 600;
+    /* font-weight: 600; */
+    font-weight: 100;
     font-size: 16px;
     color:var(--text-black-900);
 }
@@ -944,6 +949,12 @@ right: 0;
     .aside{
         right: -270px;
     }
+    .aside .nav li a {
+        font-size: 24px;
+    }
+    .aside .logo a {
+        font-style: 48px;
+    }
     .aside.open {
         right: 0;
     }
@@ -951,6 +962,26 @@ right: 0;
     {
         display: flex;
         right: 30px;
+    }
+    
+    .aside .nav-toggler {
+        height: 80px;
+        width: 95px;
+        top: 40px;
+    }
+    .aside .nav-toggler span {
+        width: 36px;
+        height: 4px;
+    }
+    .aside .nav-toggler span::before {
+        height: 4px;
+        width: 36px;
+        top: 8px;
+    }
+    .aside .nav-toggler span::after {
+        height: 4px;
+        width: 36px;
+        top: -8px;
     }
     .aside .nav-toggler.open{
         right: 300px;
@@ -966,13 +997,19 @@ right: 0;
         right: 270px;
 
     }
+    .btn {
+        font-size: 32px;
+    }
+    .section-title h2 {
+        font-size: 48px;
+    }
         .about .about-content .personal-info,
         .about .about-content .personal-info .info-item,
         .about .about-content .skills,
         .about .about-content .education,
         .about .about-content .experience,
         .service .service-item,
-        .portfolio .portfolio-item ,
+        .portfolio .portfolio-item,
         .contact .contact-form .col-6,
         .about .about-content .personal-info .info-item
         {
@@ -990,42 +1027,75 @@ right: 0;
         }
         .portfolio  .portfolio-item-project-100 
     {
-        flex:0 0 70%;
-        max-width: 70%;
+        flex:0 0 100%;
+        max-width: 100%;
         margin-bottom: 30px;
     }
     .about .about-content .about-text h3 {
-        font-size: 20px;
+        font-size: 32px;
     }
     
     .about .about-content .about-text p ,
     .about .about-content .personal-info .info-item p,
     .about .about-content .skills .skill-item h5
     {
-        font-size: 12px;
+        font-size: 24px;
+        line-height: 72px;
     }
     /**موبايل */
     .about .about-content .personal-info .info-item p span {
-        font-style: 24px;
-    }
+        font-style: 18px;
+        }
+        .about .about-content .timeline .timeline-item .timeline-text 
+        {
+            line-height: 48px;
+        }
+        .service .service-item .service-item-inner .icon 
+        {
+            height: 80px;
+            width: 80px;
+        }
+        .service .service-item .service-item-inner .icon .fa 
+        {
+            font-size: 60px;
+        }
+        .service .service-item .service-item-inner h4,
+        .portfolio .portfolio-heading h2,
+        .portfolio .portfolio-heading i.fa.fa-arrow-left
+        {
+            font-size: 36px;
+        }
+        .service .service-item .service-item-inner p,
+        .portfolio .portfolio-item h3
+        {
+            font-size: 32px;
+            line-height: 60px;
+        }
+        .service .service-item .service-item-inner {
+            height: auto;
+        }
+        .portfolio .portfolio-item .portfolio-item-inner .portfolio-img img {
+            height: 100%;
+            width: 100%;
+        }
+        .contact .contact-form .btn {
+            font-size: 24px;
+            height: 50px;
+        }
+    
 }
 @media (min-width:768px) and (max-width:991px) {
 
-    .portfolio .portfolio-item ,
-    .service .service-item  {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-    .portfolio .portfolio-item-project {
+    /* .portfolio .portfolio-item-project {
         flex: 0 0 33.33%;
         max-width: 33.33%;
-    }
-    .portfolio  .portfolio-item-project-100 
+    } */
+    /* .portfolio  .portfolio-item-project-100 
 {
     flex:0 0 70%;
     max-width: 70%;
     margin-bottom: 30px;
-} 
+}  */
     .home .home-info{
         flex: 0 0 100%;
         max-width: 100%;

@@ -109,3 +109,32 @@
 {
     background:#f021b2;
 }
+@media (min-width:0px) and (max-width:991px) {
+    .style-switcher 
+    {
+        padding: 25px;
+        width: 450px;
+    }
+    .style-switcher h4 
+    {
+        margin: 0 0 25px;
+        font-size: 24px;
+    }
+    .style-switcher .colors span 
+    {
+        height: 60px;
+        width: 60px;
+    }
+    .style-switcher .s-icon {
+        height: 80px;
+        width: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 48px;
+    }
+    .style-switcher .day-night 
+    {
+        top: 100px;
+    }
+}
