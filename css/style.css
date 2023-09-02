@@ -851,14 +851,14 @@ right: 0;
 {
     color: var(--skin-color);
     text-align: center;
-    font-style: 25px;
+    font-size: 25px;
     margin-bottom: 20px;
 }
 .contact-sub-title
 {
     color: var(--text-black-900);
     text-align: center;
-    font-style: 15px;
+    font-size: 15px;
     margin-bottom: 60px;
 }
 .contact .contact-info-item
@@ -944,6 +944,7 @@ right: 0;
     height: 50px;
     padding: 0 50px;
 }
+
 
 @media (min-width:0px) and (max-width:991px) {
     .aside{
@@ -1061,12 +1062,15 @@ right: 0;
         }
         .service .service-item .service-item-inner h4,
         .portfolio .portfolio-heading h2,
-        .portfolio .portfolio-heading i.fa.fa-arrow-left
+        .portfolio .portfolio-heading i.fa.fa-arrow-left,
+        .contact-title,
+        .contact .contact-info-item .icon .fa
         {
             font-size: 36px;
         }
         .service .service-item .service-item-inner p,
-        .portfolio .portfolio-item h3
+        .portfolio .portfolio-item h3,
+        .contact-sub-title
         {
             font-size: 32px;
             line-height: 60px;
@@ -1082,6 +1086,11 @@ right: 0;
             font-size: 24px;
             height: 50px;
         }
+        .contact .contact-form .form-item .form-control {
+            height: 100px;
+            font-size: 32px;
+        }
+        
     
 }
 @media (min-width:768px) and (max-width:991px) {
