@@ -461,10 +461,7 @@ h3.my-profession
     line-height: 25px;
     color: var(--text-black-700);
 }
-.about .about-content .about-text p.ltr 
-{
-    direction: ltr;
-}
+
 .about .about-content .personal-info
 {
     flex: 0 0 100%;
@@ -489,6 +486,10 @@ h3.my-profession
     color:var(--text-black-700);
     margin-right: 4px;
     /* display: inline-block; */
+}
+.about .about-content .about-text p span,
+.about .about-content .personal-info .info-item p {
+    color: var(--skin-color);
 }
 .about .about-content .personal-info .buttons
 {
@@ -710,6 +711,7 @@ right: 0;
 .service .service-item .service-item-inner:hover 
 {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+    background-color: var(--bg-black-50);
 }
 .service .service-item .service-item-inner .icon 
 {
@@ -948,13 +950,14 @@ right: 0;
 
 @media (min-width:0px) and (max-width:991px) {
     .aside{
-        right: -270px;
+        right: -500px;
+        width: 500px;
     }
     .aside .nav li a {
-        font-size: 24px;
+        font-size: 36px;
     }
     .aside .logo a {
-        font-style: 48px;
+        font-style: 72px;
     }
     .aside.open {
         right: 0;
@@ -985,17 +988,25 @@ right: 0;
         top: -8px;
     }
     .aside .nav-toggler.open{
-        right: 300px;
+        right: 530px;
+        }
+        .aside ul {
+            height: 50vh;
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+            justify-content: space-between;
         }
     .section {
         right: 0;
+        padding-bottom: 250px;
 
     }
     .section .container {
         padding-top: 150px;
     }
     .section.open{
-        right: 270px;
+        right: 500px;
 
     }
     .btn {
@@ -1017,6 +1028,11 @@ right: 0;
             flex: 0 0 100%;
             max-width: 100%;
         }
+        .about .about-content .about-text p.ltr 
+        {
+                direction: ltr;
+        }
+
         .contact .contact-info-item 
         {
             flex: 0 0 20%;
@@ -1036,7 +1052,7 @@ right: 0;
         font-size: 32px;
     }
     
-    .about .about-content .about-text p ,
+    .about .about-content .about-text p,
     .about .about-content .personal-info .info-item p,
     .about .about-content .skills .skill-item h5
     {
@@ -1066,7 +1082,7 @@ right: 0;
         .contact-title,
         .contact .contact-info-item .icon .fa
         {
-            font-size: 36px;
+            font-size: 48px;
         }
         .service .service-item .service-item-inner p,
         .portfolio .portfolio-item h3,
